@@ -32,8 +32,8 @@
 
           // Move the legend down
         } else if (this.options.verticalAlign === 'bottom') {
-          translateY = this.group.attr('translateY') + this.legendHeight;
-          // this.group.attr('translateY', translateY);
+          translateY = this.group.attr('translateY') /*+ this.legendHeight*/;
+          this.group.attr('translateY', translateY);
           if (this.group.alignAttr) {
             this.group.alignAttr.translateY = translateY;
           }
