@@ -32,7 +32,7 @@
 
           // Move the legend down
         } else if (this.options.verticalAlign === 'bottom') {
-	        translateY = chart.originalChartHeight;
+	        translateY = chart.originalChartHeight - 12;
           this.group.attr('translateY', translateY);
           if (this.group.alignAttr) {
             this.group.alignAttr.translateY = translateY;
